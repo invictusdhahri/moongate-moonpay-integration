@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Buy $TROLL with Apple Pay...",
   description: "Purchase $TROLL with Apple Pay, Paypal, Credit Card, Debit Card, Bank Transfer, Kidneys?",
   generator: "v0.app",
+  icons: {
+    icon: "/trollface.jpg",
+  },
 }
 
 export default function RootLayout({
