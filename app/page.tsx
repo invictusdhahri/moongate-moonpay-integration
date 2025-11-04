@@ -1,6 +1,39 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
+import { loadMoonPay } from "@moonpay/moonpay-js"
+import { useEffect, useState } from "react"
 
 export default function Home() {
+  const [moonPaySdk, setMoonPaySdk] = useState<any>(null)
+
+  useEffect(() => {
+    const initMoonPay = async () => {
+      const moonPay = await loadMoonPay()
+      const sdk = moonPay({
+        flow: "swap",
+        environment: "sandbox",
+        variant: "overlay",
+        params: {
+          apiKey: "pk_test_YOs64owYI4VHmO6yr7XexeIKpt319Lnt",
+          theme: "dark",
+          baseCurrencyCode: "usd",
+          baseCurrencyAmount: "100",
+          defaultCurrencyCode: "eth",
+        },
+      })
+      setMoonPaySdk(sdk)
+    }
+
+    initMoonPay()
+  }, [])
+
+  const handleGetStarted = () => {
+    if (moonPaySdk) {
+      moonPaySdk.show()
+    }
+  }
+
   return (
     <div className="min-h-screen bg-[#f5f5f5] flex flex-col">
       {/* Header */}
@@ -26,7 +59,11 @@ export default function Home() {
           <span className="text-black">Apple Pay</span>
         </h1>
 
-        <Button size="lg" className="bg-black text-white hover:bg-black/90 px-12 py-6 text-lg rounded-lg mb-6">
+        <Button
+          size="lg"
+          className="bg-black text-white hover:bg-black/90 px-12 py-6 text-lg rounded-lg mb-6"
+          onClick={handleGetStarted}
+        >
           Get Started
         </Button>
 
