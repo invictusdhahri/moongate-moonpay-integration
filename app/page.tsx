@@ -6,6 +6,8 @@ import { useEffect, useState } from "react"
 
 export default function Home() {
   const [moonPaySdk, setMoonPaySdk] = useState<any>(null)
+  const [currentPaymentIndex, setCurrentPaymentIndex] = useState(0)
+  const paymentMethods = ["Apple Pay", "Paypal", "Credit Card", "Debit Card", "Bank Transfer", "Kidneys?"]
 
   useEffect(() => {
     const initMoonPay = async () => {
@@ -26,6 +28,14 @@ export default function Home() {
     }
 
     initMoonPay()
+  }, [])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPaymentIndex((prev) => (prev + 1) % paymentMethods.length)
+    }, 2000)
+
+    return () => clearInterval(interval)
   }, [])
 
   const handleGetStarted = () => {
@@ -54,9 +64,11 @@ export default function Home() {
         <h1 className="text-5xl md:text-7xl font-bold text-center mb-12 leading-tight">
           <span className="text-black">Buy </span>
           <span className="text-[#4ade80]">$TROLL</span>
-          <span className="text-black"> With</span>
+          <span className="text-black"> with</span>
           <br />
-          <span className="text-black">Apple Pay</span>
+          <span className="text-black inline-block min-w-[300px] transition-all duration-500 ease-in-out">
+            {paymentMethods[currentPaymentIndex]}
+          </span>
         </h1>
 
         <Button
