@@ -3,6 +3,30 @@
 import { Button } from "@/components/ui/button"
 import { loadMoonPay } from "@moonpay/moonpay-js"
 import { useEffect, useState } from "react"
+import { MoonGateProvider, MoongateConnectButton, useWallet } from "@moongate/sdk"
+
+// Component to handle wallet connection and Buy Troll button
+function WalletActionButton({ onBuyTroll }: { onBuyTroll: () => void }) {
+  const { publicKey, connected } = useWallet()
+  const hasWallet = connected && publicKey
+
+  if (hasWallet) {
+    // Match MoongateConnectButton styling exactly
+    return (
+      <div className="moongate-wallet-sdk">
+        <button
+          onClick={onBuyTroll}
+          type="button"
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-black text-white hover:bg-black/90"
+        >
+          Buy Troll
+        </button>
+      </div>
+    )
+  }
+
+  return <MoongateConnectButton />
+}
 
 export default function Home() {
   const [moonPaySdk, setMoonPaySdk] = useState<any>(null)
@@ -71,13 +95,9 @@ export default function Home() {
           </span>
         </h1>
 
-        <Button
-          size="lg"
-          className="bg-black text-white hover:bg-black/90 px-12 py-6 text-lg rounded-lg mb-6"
-          onClick={handleGetStarted}
-        >
-          Get Started
-        </Button>
+        <MoonGateProvider apiKey="mg_pk_75a5c1e61d6e2188568425892f25d338">
+          <WalletActionButton onBuyTroll={handleGetStarted} />
+        </MoonGateProvider>  
 
         <div className="flex items-center gap-2 text-sm text-gray-600 mb-8">
           <span>Powered by</span>

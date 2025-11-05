@@ -1,0 +1,1553 @@
+/* Scoped Tailwind CSS for MoonGate Wallet SDK */
+
+/* All styles are nested inside .moongate-wallet-sdk to prevent global leakage */
+
+.moongate-wallet-sdk {
+  /* Include all Tailwind styles scoped to this container */
+  *, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+  }
+  ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+  }
+  /*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+  *:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+:where(.moongate-wallet-sdk,.moongate-wallet-sdk *)::before,
+:where(.moongate-wallet-sdk,.moongate-wallet-sdk *)::after {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    border-color: #e5e7eb;
+    /* 2 */
+  }
+  :where(.moongate-wallet-sdk,.moongate-wallet-sdk *)::before,
+:where(.moongate-wallet-sdk,.moongate-wallet-sdk *)::after {
+    --tw-content: '';
+  }
+  /*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+  .moongate-wallet-sdk {
+    line-height: 1.5;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    -moz-tab-size: 4;
+    /* 3 */
+    -o-tab-size: 4;
+       tab-size: 4;
+    /* 3 */
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* 4 */
+    font-feature-settings: normal;
+    /* 5 */
+    font-variation-settings: normal;
+    /* 6 */
+    -webkit-tap-highlight-color: transparent;
+    /* 7 */
+  }
+  /*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+  .moongate-wallet-sdk {
+    margin: 0;
+    /* 1 */
+    line-height: inherit;
+    /* 2 */
+  }
+  /*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+  hr:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    height: 0;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    border-top-width: 1px;
+    /* 3 */
+  }
+  /*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+  abbr:where([title]):where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+  }
+  /*
+Remove the default font size and weight for headings.
+*/
+  h1:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h2:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h3:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h4:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h5:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h6:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  /*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+  a:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  /*
+Add the correct font weight in Edge and Safari.
+*/
+  b:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+strong:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    font-weight: bolder;
+  }
+  /*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+  code:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+kbd:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+samp:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+pre:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* 1 */
+    font-feature-settings: normal;
+    /* 2 */
+    font-variation-settings: normal;
+    /* 3 */
+    font-size: 1em;
+    /* 4 */
+  }
+  /*
+Add the correct font size in all browsers.
+*/
+  small:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    font-size: 80%;
+  }
+  /*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+  sub:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+sup:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    bottom: -0.25em;
+  }
+  sup:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    top: -0.5em;
+  }
+  /*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+  table:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    text-indent: 0;
+    /* 1 */
+    border-color: inherit;
+    /* 2 */
+    border-collapse: collapse;
+    /* 3 */
+  }
+  /*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+  button:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+input:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+optgroup:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+select:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+textarea:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    font-family: inherit;
+    /* 1 */
+    font-feature-settings: inherit;
+    /* 1 */
+    font-variation-settings: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    font-weight: inherit;
+    /* 1 */
+    line-height: inherit;
+    /* 1 */
+    letter-spacing: inherit;
+    /* 1 */
+    color: inherit;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+    padding: 0;
+    /* 3 */
+  }
+  /*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+  button:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+select:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    text-transform: none;
+  }
+  /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+  button:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+input:where([type='button']):where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+input:where([type='reset']):where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+input:where([type='submit']):where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    -webkit-appearance: button;
+    /* 1 */
+    background-color: transparent;
+    /* 2 */
+    background-image: none;
+    /* 2 */
+  }
+  /*
+Use the modern Firefox focus style for all focusable elements.
+*/
+  :-moz-focusring:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    outline: auto;
+  }
+  /*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+  :-moz-ui-invalid:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    box-shadow: none;
+  }
+  /*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+  progress:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    vertical-align: baseline;
+  }
+  /*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+  :where(.moongate-wallet-sdk,.moongate-wallet-sdk *) ::-webkit-inner-spin-button,
+:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  /*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+  [type='search']:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+  }
+  /*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+  :where(.moongate-wallet-sdk,.moongate-wallet-sdk *) ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+  :where(.moongate-wallet-sdk,.moongate-wallet-sdk *) ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+  }
+  /*
+Add the correct display in Chrome and Safari.
+*/
+  summary:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    display: list-item;
+  }
+  /*
+Removes the default spacing and border for appropriate elements.
+*/
+  blockquote:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+dl:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+dd:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h1:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h2:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h3:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h4:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h5:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+h6:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+hr:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+figure:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+p:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+pre:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    margin: 0;
+  }
+  fieldset:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    margin: 0;
+    padding: 0;
+  }
+  legend:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    padding: 0;
+  }
+  ol:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+ul:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+menu:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /*
+Reset default styling for dialogs.
+*/
+  dialog:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    padding: 0;
+  }
+  /*
+Prevent resizing textareas horizontally by default.
+*/
+  textarea:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    resize: vertical;
+  }
+  /*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+  :where(.moongate-wallet-sdk,.moongate-wallet-sdk *) input::-moz-placeholder, :where(.moongate-wallet-sdk,.moongate-wallet-sdk *) textarea::-moz-placeholder {
+    opacity: 1;
+    /* 1 */
+    color: #9ca3af;
+    /* 2 */
+  }
+  :where(.moongate-wallet-sdk,.moongate-wallet-sdk *) input::placeholder,
+:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) textarea::placeholder {
+    opacity: 1;
+    /* 1 */
+    color: #9ca3af;
+    /* 2 */
+  }
+  /*
+Set the default cursor for buttons.
+*/
+  button:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+[role="button"]:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    cursor: pointer;
+  }
+  /*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+  :disabled:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    cursor: default;
+  }
+  /*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+  img:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+svg:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+video:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+canvas:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+audio:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+iframe:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+embed:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+object:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    display: block;
+    /* 1 */
+    vertical-align: middle;
+    /* 2 */
+  }
+  /*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+  img:where(.moongate-wallet-sdk,.moongate-wallet-sdk *),
+video:where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Make elements with the HTML hidden attribute stay hidden by default */
+  [hidden]:where(:not([hidden="until-found"])):where(.moongate-wallet-sdk,.moongate-wallet-sdk *) {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+  .moongate-wallet-sdk .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .moongate-wallet-sdk .visible {
+    visibility: visible;
+  }
+  .moongate-wallet-sdk .fixed {
+    position: fixed;
+  }
+  .moongate-wallet-sdk .absolute {
+    position: absolute;
+  }
+  .moongate-wallet-sdk .relative {
+    position: relative;
+  }
+  .moongate-wallet-sdk .inset-0 {
+    inset: 0px;
+  }
+  .moongate-wallet-sdk .inset-x-0 {
+    left: 0px;
+    right: 0px;
+  }
+  .moongate-wallet-sdk .inset-y-0 {
+    top: 0px;
+    bottom: 0px;
+  }
+  .moongate-wallet-sdk .bottom-0 {
+    bottom: 0px;
+  }
+  .moongate-wallet-sdk .left-0 {
+    left: 0px;
+  }
+  .moongate-wallet-sdk .left-2 {
+    left: 0.5rem;
+  }
+  .moongate-wallet-sdk .left-\[50\%\] {
+    left: 50%;
+  }
+  .moongate-wallet-sdk .right-0 {
+    right: 0px;
+  }
+  .moongate-wallet-sdk .right-4 {
+    right: 1rem;
+  }
+  .moongate-wallet-sdk .top-0 {
+    top: 0px;
+  }
+  .moongate-wallet-sdk .top-4 {
+    top: 1rem;
+  }
+  .moongate-wallet-sdk .top-\[50\%\] {
+    top: 50%;
+  }
+  .moongate-wallet-sdk .z-50 {
+    z-index: 50;
+  }
+  .moongate-wallet-sdk .-mx-1 {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+  }
+  .moongate-wallet-sdk .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .moongate-wallet-sdk .my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .moongate-wallet-sdk .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  .moongate-wallet-sdk .mb-4 {
+    margin-bottom: 1rem;
+  }
+  .moongate-wallet-sdk .ml-2 {
+    margin-left: 0.5rem;
+  }
+  .moongate-wallet-sdk .ml-auto {
+    margin-left: auto;
+  }
+  .moongate-wallet-sdk .mt-2 {
+    margin-top: 0.5rem;
+  }
+  .moongate-wallet-sdk .mt-4 {
+    margin-top: 1rem;
+  }
+  .moongate-wallet-sdk .inline {
+    display: inline;
+  }
+  .moongate-wallet-sdk .flex {
+    display: flex;
+  }
+  .moongate-wallet-sdk .inline-flex {
+    display: inline-flex;
+  }
+  .moongate-wallet-sdk .grid {
+    display: grid;
+  }
+  .moongate-wallet-sdk .hidden {
+    display: none;
+  }
+  .moongate-wallet-sdk .h-10 {
+    height: 2.5rem;
+  }
+  .moongate-wallet-sdk .h-11 {
+    height: 2.75rem;
+  }
+  .moongate-wallet-sdk .h-2 {
+    height: 0.5rem;
+  }
+  .moongate-wallet-sdk .h-2\.5 {
+    height: 0.625rem;
+  }
+  .moongate-wallet-sdk .h-3\.5 {
+    height: 0.875rem;
+  }
+  .moongate-wallet-sdk .h-4 {
+    height: 1rem;
+  }
+  .moongate-wallet-sdk .h-5 {
+    height: 1.25rem;
+  }
+  .moongate-wallet-sdk .h-8 {
+    height: 2rem;
+  }
+  .moongate-wallet-sdk .h-9 {
+    height: 2.25rem;
+  }
+  .moongate-wallet-sdk .h-\[80vh\] {
+    height: 80vh;
+  }
+  .moongate-wallet-sdk .h-full {
+    height: 100%;
+  }
+  .moongate-wallet-sdk .h-px {
+    height: 1px;
+  }
+  .moongate-wallet-sdk .min-h-screen {
+    min-height: 100vh;
+  }
+  .moongate-wallet-sdk .w-10 {
+    width: 2.5rem;
+  }
+  .moongate-wallet-sdk .w-2 {
+    width: 0.5rem;
+  }
+  .moongate-wallet-sdk .w-2\.5 {
+    width: 0.625rem;
+  }
+  .moongate-wallet-sdk .w-3\.5 {
+    width: 0.875rem;
+  }
+  .moongate-wallet-sdk .w-3\/4 {
+    width: 75%;
+  }
+  .moongate-wallet-sdk .w-4 {
+    width: 1rem;
+  }
+  .moongate-wallet-sdk .w-5 {
+    width: 1.25rem;
+  }
+  .moongate-wallet-sdk .w-8 {
+    width: 2rem;
+  }
+  .moongate-wallet-sdk .w-full {
+    width: 100%;
+  }
+  .moongate-wallet-sdk .min-w-\[220px\] {
+    min-width: 220px;
+  }
+  .moongate-wallet-sdk .min-w-\[8rem\] {
+    min-width: 8rem;
+  }
+  .moongate-wallet-sdk .max-w-2xl {
+    max-width: 42rem;
+  }
+  .moongate-wallet-sdk .max-w-lg {
+    max-width: 32rem;
+  }
+  .moongate-wallet-sdk .flex-1 {
+    flex: 1 1 0%;
+  }
+  .moongate-wallet-sdk .translate-x-\[-50\%\] {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .moongate-wallet-sdk .translate-y-\[-50\%\] {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .moongate-wallet-sdk .transform {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .moongate-wallet-sdk .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  .moongate-wallet-sdk .cursor-default {
+    cursor: default;
+  }
+  .moongate-wallet-sdk .cursor-pointer {
+    cursor: pointer;
+  }
+  .moongate-wallet-sdk .touch-none {
+    touch-action: none;
+  }
+  .moongate-wallet-sdk .select-none {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .moongate-wallet-sdk .flex-col {
+    flex-direction: column;
+  }
+  .moongate-wallet-sdk .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+  .moongate-wallet-sdk .items-center {
+    align-items: center;
+  }
+  .moongate-wallet-sdk .justify-start {
+    justify-content: flex-start;
+  }
+  .moongate-wallet-sdk .justify-center {
+    justify-content: center;
+  }
+  .moongate-wallet-sdk .justify-between {
+    justify-content: space-between;
+  }
+  .moongate-wallet-sdk .gap-2 {
+    gap: 0.5rem;
+  }
+  .moongate-wallet-sdk .gap-3 {
+    gap: 0.75rem;
+  }
+  .moongate-wallet-sdk .gap-4 {
+    gap: 1rem;
+  }
+  .moongate-wallet-sdk :is(.space-y-1\.5 > :not([hidden]) ~ :not([hidden])) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+  }
+  .moongate-wallet-sdk :is(.space-y-2 > :not([hidden]) ~ :not([hidden])) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+  .moongate-wallet-sdk .overflow-hidden {
+    overflow: hidden;
+  }
+  .moongate-wallet-sdk .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .moongate-wallet-sdk .rounded {
+    border-radius: 0.25rem;
+  }
+  .moongate-wallet-sdk .rounded-\[inherit\] {
+    border-radius: inherit;
+  }
+  .moongate-wallet-sdk .rounded-full {
+    border-radius: 9999px;
+  }
+  .moongate-wallet-sdk .rounded-lg {
+    border-radius: var(--moongate-radius);
+  }
+  .moongate-wallet-sdk .rounded-md {
+    border-radius: calc(var(--moongate-radius) - 2px);
+  }
+  .moongate-wallet-sdk .rounded-sm {
+    border-radius: calc(var(--moongate-radius) - 4px);
+  }
+  .moongate-wallet-sdk .rounded-t-lg {
+    border-top-left-radius: var(--moongate-radius);
+    border-top-right-radius: var(--moongate-radius);
+  }
+  .moongate-wallet-sdk .border {
+    border-width: 1px;
+  }
+  .moongate-wallet-sdk .border-0 {
+    border-width: 0px;
+  }
+  .moongate-wallet-sdk .border-b {
+    border-bottom-width: 1px;
+  }
+  .moongate-wallet-sdk .border-b-2 {
+    border-bottom-width: 2px;
+  }
+  .moongate-wallet-sdk .border-l {
+    border-left-width: 1px;
+  }
+  .moongate-wallet-sdk .border-r {
+    border-right-width: 1px;
+  }
+  .moongate-wallet-sdk .border-t {
+    border-top-width: 1px;
+  }
+  .moongate-wallet-sdk .border-gray-900 {
+    --tw-border-opacity: 1;
+    border-color: rgb(17 24 39 / var(--tw-border-opacity, 1));
+  }
+  .moongate-wallet-sdk .border-input {
+    border-color: hsl(var(--moongate-input));
+  }
+  .moongate-wallet-sdk .border-l-transparent {
+    border-left-color: transparent;
+  }
+  .moongate-wallet-sdk .border-t-transparent {
+    border-top-color: transparent;
+  }
+  .moongate-wallet-sdk .bg-background {
+    background-color: hsl(var(--moongate-background));
+  }
+  .moongate-wallet-sdk .bg-black\/50 {
+    background-color: rgb(0 0 0 / 0.5);
+  }
+  .moongate-wallet-sdk .bg-black\/80 {
+    background-color: rgb(0 0 0 / 0.8);
+  }
+  .moongate-wallet-sdk .bg-blue-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+  }
+  .moongate-wallet-sdk .bg-border {
+    background-color: hsl(var(--moongate-border));
+  }
+  .moongate-wallet-sdk .bg-destructive {
+    background-color: hsl(var(--moongate-destructive));
+  }
+  .moongate-wallet-sdk .bg-green-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+  }
+  .moongate-wallet-sdk .bg-muted {
+    background-color: hsl(var(--moongate-muted));
+  }
+  .moongate-wallet-sdk .bg-popover {
+    background-color: hsl(var(--moongate-popover));
+  }
+  .moongate-wallet-sdk .bg-primary {
+    background-color: hsl(var(--moongate-primary));
+  }
+  .moongate-wallet-sdk .bg-secondary {
+    background-color: hsl(var(--moongate-secondary));
+  }
+  .moongate-wallet-sdk .fill-current {
+    fill: currentColor;
+  }
+  .moongate-wallet-sdk .p-0 {
+    padding: 0px;
+  }
+  .moongate-wallet-sdk .p-1 {
+    padding: 0.25rem;
+  }
+  .moongate-wallet-sdk .p-2 {
+    padding: 0.5rem;
+  }
+  .moongate-wallet-sdk .p-3 {
+    padding: 0.75rem;
+  }
+  .moongate-wallet-sdk .p-6 {
+    padding: 1.5rem;
+  }
+  .moongate-wallet-sdk .p-\[1px\] {
+    padding: 1px;
+  }
+  .moongate-wallet-sdk .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .moongate-wallet-sdk .px-2\.5 {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+  .moongate-wallet-sdk .px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .moongate-wallet-sdk .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .moongate-wallet-sdk .px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .moongate-wallet-sdk .py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+  .moongate-wallet-sdk .py-1\.5 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+  .moongate-wallet-sdk .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .moongate-wallet-sdk .py-2\.5 {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .moongate-wallet-sdk .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .moongate-wallet-sdk .pl-8 {
+    padding-left: 2rem;
+  }
+  .moongate-wallet-sdk .pr-2 {
+    padding-right: 0.5rem;
+  }
+  .moongate-wallet-sdk .text-center {
+    text-align: center;
+  }
+  .moongate-wallet-sdk .text-right {
+    text-align: right;
+  }
+  .moongate-wallet-sdk .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .moongate-wallet-sdk .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .moongate-wallet-sdk .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .moongate-wallet-sdk .text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .moongate-wallet-sdk .font-bold {
+    font-weight: 700;
+  }
+  .moongate-wallet-sdk .font-medium {
+    font-weight: 500;
+  }
+  .moongate-wallet-sdk .font-semibold {
+    font-weight: 600;
+  }
+  .moongate-wallet-sdk .leading-none {
+    line-height: 1;
+  }
+  .moongate-wallet-sdk .tracking-tight {
+    letter-spacing: -0.025em;
+  }
+  .moongate-wallet-sdk .tracking-widest {
+    letter-spacing: 0.1em;
+  }
+  .moongate-wallet-sdk .text-blue-800 {
+    --tw-text-opacity: 1;
+    color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+  }
+  .moongate-wallet-sdk .text-destructive-foreground {
+    color: hsl(var(--moongate-destructive-foreground));
+  }
+  .moongate-wallet-sdk .text-foreground {
+    color: hsl(var(--moongate-foreground));
+  }
+  .moongate-wallet-sdk .text-muted-foreground {
+    color: hsl(var(--moongate-muted-foreground));
+  }
+  .moongate-wallet-sdk .text-popover-foreground {
+    color: hsl(var(--moongate-popover-foreground));
+  }
+  .moongate-wallet-sdk .text-primary {
+    color: hsl(var(--moongate-primary));
+  }
+  .moongate-wallet-sdk .text-primary-foreground {
+    color: hsl(var(--moongate-primary-foreground));
+  }
+  .moongate-wallet-sdk .text-red-600 {
+    --tw-text-opacity: 1;
+    color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+  }
+  .moongate-wallet-sdk .text-secondary-foreground {
+    color: hsl(var(--moongate-secondary-foreground));
+  }
+  .moongate-wallet-sdk .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+  .moongate-wallet-sdk .opacity-60 {
+    opacity: 0.6;
+  }
+  .moongate-wallet-sdk .opacity-70 {
+    opacity: 0.7;
+  }
+  .moongate-wallet-sdk .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .moongate-wallet-sdk .shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .moongate-wallet-sdk .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .moongate-wallet-sdk .outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  .moongate-wallet-sdk .outline {
+    outline-style: solid;
+  }
+  .moongate-wallet-sdk .ring-offset-background {
+    --tw-ring-offset-color: hsl(var(--moongate-background));
+  }
+  .moongate-wallet-sdk .invert {
+    --tw-invert: invert(100%);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  .moongate-wallet-sdk .filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  .moongate-wallet-sdk .backdrop-blur-md {
+    --tw-backdrop-blur: blur(12px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  }
+  .moongate-wallet-sdk .transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .moongate-wallet-sdk .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .moongate-wallet-sdk .transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .moongate-wallet-sdk .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .moongate-wallet-sdk .duration-200 {
+    transition-duration: 200ms;
+  }
+  .moongate-wallet-sdk .ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @keyframes enter {
+    from {
+      opacity: var(--tw-enter-opacity, 1);
+      transform: translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0) scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), var(--tw-enter-scale, 1)) rotate(var(--tw-enter-rotate, 0));
+    }
+  }
+  @keyframes exit {
+    to {
+      opacity: var(--tw-exit-opacity, 1);
+      transform: translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1)) rotate(var(--tw-exit-rotate, 0));
+    }
+  }
+  .moongate-wallet-sdk .duration-200 {
+    animation-duration: 200ms;
+  }
+  .moongate-wallet-sdk .ease-in-out {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* Light theme variables */
+  --moongate-background: 0 0% 100%;
+  --moongate-foreground: 240 10% 3.9%;
+  --moongate-card: 0 0% 100%;
+  --moongate-card-foreground: 240 10% 3.9%;
+  --moongate-popover: 0 0% 100%;
+  --moongate-popover-foreground: 240 10% 3.9%;
+  --moongate-primary: 240 5.9% 10%;
+  --moongate-primary-foreground: 0 0% 98%;
+  --moongate-secondary: 240 4.8% 95.9%;
+  --moongate-secondary-foreground: 240 5.9% 10%;
+  --moongate-muted: 240 4.8% 95.9%;
+  --moongate-muted-foreground: 240 3.8% 46.1%;
+  --moongate-accent: 240 4.8% 95.9%;
+  --moongate-accent-foreground: 240 5.9% 10%;
+  --moongate-destructive: 0 84.2% 60.2%;
+  --moongate-destructive-foreground: 0 0% 98%;
+  --moongate-border: 240 5.9% 90%;
+  --moongate-input: 240 5.9% 90%;
+  --moongate-ring: 240 10% 3.9%;
+  --moongate-radius: 0.5rem;
+  /* Default font and colors for the SDK container */
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Ensure proper positioning context */
+  position: relative;
+  z-index: 1;
+  /* Dark theme variables */
+  &.dark {
+    --moongate-background: 240 10% 3.9%;
+    --moongate-foreground: 0 0% 98%;
+    --moongate-card: 240 10% 3.9%;
+    --moongate-card-foreground: 0 0% 98%;
+    --moongate-popover: 240 10% 3.9%;
+    --moongate-popover-foreground: 0 0% 98%;
+    --moongate-primary: 0 0% 98%;
+    --moongate-primary-foreground: 240 5.9% 10%;
+    --moongate-secondary: 240 3.7% 15.9%;
+    --moongate-secondary-foreground: 0 0% 98%;
+    --moongate-muted: 240 3.7% 15.9%;
+    --moongate-muted-foreground: 240 5% 64.9%;
+    --moongate-accent: 240 3.7% 15.9%;
+    --moongate-accent-foreground: 0 0% 98%;
+    --moongate-destructive: 0 62.8% 30.6%;
+    --moongate-destructive-foreground: 0 0% 98%;
+    --moongate-border: 240 3.7% 15.9%;
+    --moongate-input: 240 3.7% 15.9%;
+    --moongate-ring: 240 4.9% 83.9%;
+  }
+  /* Scoped base styles */
+  * {
+    border-color: hsl(var(--moongate-border));
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  /* Utility classes for wallet components */
+  .moongate-glassmorphism {
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.1);
+  }
+  /* Ensure dropdown menus work properly in packaged environments */
+  [data-radix-popper-content-wrapper] {
+    z-index: 9999 !important;
+    position: fixed !important;
+  }
+  [data-radix-dropdown-menu-content] {
+    z-index: 9999 !important;
+    position: fixed !important;
+    pointer-events: auto !important;
+  }
+  [data-radix-dropdown-menu-item] {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+  }
+}
+
+/* Animation keyframes - scoped with moongate prefix */
+
+@keyframes moongate-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moongate-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes moongate-dialog-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes moongate-dialog-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+}
+
+@keyframes moongate-slide-in-from-bottom {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moongate-slide-out-to-bottom {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.moongate-wallet-sdk .hover\:bg-accent:hover {
+  background-color: hsl(var(--moongate-accent));
+}
+
+.moongate-wallet-sdk .hover\:bg-destructive\/90:hover {
+  background-color: hsl(var(--moongate-destructive) / 0.9);
+}
+
+.moongate-wallet-sdk .hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.moongate-wallet-sdk .hover\:bg-gray-800\/50:hover {
+  background-color: rgb(31 41 55 / 0.5);
+}
+
+.moongate-wallet-sdk .hover\:bg-primary\/90:hover {
+  background-color: hsl(var(--moongate-primary) / 0.9);
+}
+
+.moongate-wallet-sdk .hover\:bg-secondary\/80:hover {
+  background-color: hsl(var(--moongate-secondary) / 0.8);
+}
+
+.moongate-wallet-sdk .hover\:text-accent-foreground:hover {
+  color: hsl(var(--moongate-accent-foreground));
+}
+
+.moongate-wallet-sdk .hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.moongate-wallet-sdk .hover\:opacity-100:hover {
+  opacity: 1;
+}
+
+.moongate-wallet-sdk .hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
+.moongate-wallet-sdk .focus\:bg-accent:focus {
+  background-color: hsl(var(--moongate-accent));
+}
+
+.moongate-wallet-sdk .focus\:text-accent-foreground:focus {
+  color: hsl(var(--moongate-accent-foreground));
+}
+
+.moongate-wallet-sdk .focus\:opacity-80:focus {
+  opacity: 0.8;
+}
+
+.moongate-wallet-sdk .focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.moongate-wallet-sdk .focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.moongate-wallet-sdk .focus\:ring-ring:focus {
+  --tw-ring-color: hsl(var(--moongate-ring));
+}
+
+.moongate-wallet-sdk .focus\:ring-offset-2:focus {
+  --tw-ring-offset-width: 2px;
+}
+
+.moongate-wallet-sdk .focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.moongate-wallet-sdk .focus-visible\:ring-2:focus-visible {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.moongate-wallet-sdk .focus-visible\:ring-ring:focus-visible {
+  --tw-ring-color: hsl(var(--moongate-ring));
+}
+
+.moongate-wallet-sdk .focus-visible\:ring-offset-2:focus-visible {
+  --tw-ring-offset-width: 2px;
+}
+
+.moongate-wallet-sdk .disabled\:pointer-events-none:disabled {
+  pointer-events: none;
+}
+
+.moongate-wallet-sdk .disabled\:opacity-50:disabled {
+  opacity: 0.5;
+}
+
+.moongate-wallet-sdk :is(.group:hover .group-hover\:text-current) {
+  color: currentColor;
+}
+
+.moongate-wallet-sdk .data-\[disabled\]\:pointer-events-none[data-disabled] {
+  pointer-events: none;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:bg-accent[data-state="open"] {
+  background-color: hsl(var(--moongate-accent));
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:bg-secondary[data-state="open"] {
+  background-color: hsl(var(--moongate-secondary));
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:text-muted-foreground[data-state="open"] {
+  color: hsl(var(--moongate-muted-foreground));
+}
+
+.moongate-wallet-sdk .data-\[disabled\]\:opacity-50[data-disabled] {
+  opacity: 0.5;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:duration-300[data-state="closed"] {
+  transition-duration: 300ms;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:duration-500[data-state="open"] {
+  transition-duration: 500ms;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:animate-in[data-state="open"] {
+  animation-name: enter;
+  animation-duration: 150ms;
+  --tw-enter-opacity: initial;
+  --tw-enter-scale: initial;
+  --tw-enter-rotate: initial;
+  --tw-enter-translate-x: initial;
+  --tw-enter-translate-y: initial;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:animate-out[data-state="closed"] {
+  animation-name: exit;
+  animation-duration: 150ms;
+  --tw-exit-opacity: initial;
+  --tw-exit-scale: initial;
+  --tw-exit-rotate: initial;
+  --tw-exit-translate-x: initial;
+  --tw-exit-translate-y: initial;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:fade-out-0[data-state="closed"] {
+  --tw-exit-opacity: 0;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:fade-in-0[data-state="open"] {
+  --tw-enter-opacity: 0;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:zoom-out-95[data-state="closed"] {
+  --tw-exit-scale: .95;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:zoom-in-95[data-state="open"] {
+  --tw-enter-scale: .95;
+}
+
+.moongate-wallet-sdk .data-\[side\=bottom\]\:slide-in-from-top-2[data-side="bottom"] {
+  --tw-enter-translate-y: -0.5rem;
+}
+
+.moongate-wallet-sdk .data-\[side\=left\]\:slide-in-from-right-2[data-side="left"] {
+  --tw-enter-translate-x: 0.5rem;
+}
+
+.moongate-wallet-sdk .data-\[side\=right\]\:slide-in-from-left-2[data-side="right"] {
+  --tw-enter-translate-x: -0.5rem;
+}
+
+.moongate-wallet-sdk .data-\[side\=top\]\:slide-in-from-bottom-2[data-side="top"] {
+  --tw-enter-translate-y: 0.5rem;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:slide-out-to-bottom[data-state="closed"] {
+  --tw-exit-translate-y: 100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:slide-out-to-left[data-state="closed"] {
+  --tw-exit-translate-x: -100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:slide-out-to-left-1\/2[data-state="closed"] {
+  --tw-exit-translate-x: -50%;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:slide-out-to-right[data-state="closed"] {
+  --tw-exit-translate-x: 100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:slide-out-to-top[data-state="closed"] {
+  --tw-exit-translate-y: -100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:slide-out-to-top-1\/2[data-state="closed"] {
+  --tw-exit-translate-y: -50%;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:slide-out-to-top-\[48\%\][data-state="closed"] {
+  --tw-exit-translate-y: -48%;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:slide-in-from-bottom[data-state="open"] {
+  --tw-enter-translate-y: 100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:slide-in-from-left[data-state="open"] {
+  --tw-enter-translate-x: -100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:slide-in-from-left-1\/2[data-state="open"] {
+  --tw-enter-translate-x: -50%;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:slide-in-from-right[data-state="open"] {
+  --tw-enter-translate-x: 100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:slide-in-from-top[data-state="open"] {
+  --tw-enter-translate-y: -100%;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:slide-in-from-top-1\/2[data-state="open"] {
+  --tw-enter-translate-y: -50%;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:slide-in-from-top-\[48\%\][data-state="open"] {
+  --tw-enter-translate-y: -48%;
+}
+
+.moongate-wallet-sdk .data-\[state\=closed\]\:duration-300[data-state="closed"] {
+  animation-duration: 300ms;
+}
+
+.moongate-wallet-sdk .data-\[state\=open\]\:duration-500[data-state="open"] {
+  animation-duration: 500ms;
+}
+
+.moongate-wallet-sdk .dark\:bg-blue-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity, 1));
+}
+
+.moongate-wallet-sdk .dark\:text-blue-200:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity, 1));
+}
+
+.moongate-wallet-sdk .dark\:hover\:bg-gray-800:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .moongate-wallet-sdk .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .moongate-wallet-sdk .sm\:max-w-sm {
+    max-width: 24rem;
+  }
+
+  .moongate-wallet-sdk .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .moongate-wallet-sdk .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .moongate-wallet-sdk :is(.sm\:space-x-2 > :not([hidden]) ~ :not([hidden])) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .moongate-wallet-sdk .sm\:rounded-lg {
+    border-radius: var(--moongate-radius);
+  }
+
+  .moongate-wallet-sdk .sm\:text-left {
+    text-align: left;
+  }
+}
+
+.moongate-wallet-sdk :is(.\[\&_svg\]\:pointer-events-none svg) {
+  pointer-events: none;
+}
+
+.moongate-wallet-sdk :is(.\[\&_svg\]\:size-4 svg) {
+  width: 1rem;
+  height: 1rem;
+}
+
+.moongate-wallet-sdk :is(.\[\&_svg\]\:shrink-0 svg) {
+  flex-shrink: 0;
+}
