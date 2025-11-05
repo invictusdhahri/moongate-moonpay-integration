@@ -64,7 +64,7 @@ export default function Home() {
         <h1 className="text-5xl md:text-7xl font-bold text-center mb-12 leading-tight">
           <span className="text-black">Buy </span>
           <span className="text-[#4ade80]">$TROLL</span>
-          <span className="text-black"> with</span>
+          <span className="text-black"> With</span>
           <br />
           <span className="text-black inline-block min-w-[300px] transition-all duration-500 ease-in-out">
             {paymentMethods[currentPaymentIndex]}
