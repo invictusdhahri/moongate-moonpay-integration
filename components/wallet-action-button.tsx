@@ -16,9 +16,9 @@ export function WalletActionButton() {
   // Convert PublicKey object to Base58 string address (only when connected)
   const walletAddress = hasWallet && publicKey ? publicKey.toBase58?.() : null
   
-  // Initialize MoonPay with wallet address when available
-  // When disconnected, walletAddress will be null and SDK will reinitialize
-  const { showMoonPay } = useMoonPay({ 
+  // Initialize MoonPay redirect URL with wallet address when available
+  // When disconnected, walletAddress will be null
+  const { redirectToMoonPay } = useMoonPay({ 
     walletAddress 
   })
 
@@ -64,7 +64,7 @@ export function WalletActionButton() {
         <div className="text-center">
           <div className="moongate-wallet-sdk">
             <button
-              onClick={showMoonPay}
+              onClick={redirectToMoonPay}
               type="button"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-8 py-2 bg-black text-white hover:bg-black/90"
             >
