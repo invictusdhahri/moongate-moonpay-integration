@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Purchase $TROLL with Apple Pay, Paypal, Credit Card, Debit Card, Bank Transfer, Kidneys?",
   generator: "v0.app",
   icons: {
-    icon: "/trollface.jpg",
+    icon: "/images/design-mode/IMG_0174.png",
   },
 }
 
