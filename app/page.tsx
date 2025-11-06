@@ -7,12 +7,9 @@ import { PaymentTitle } from "@/components/payment-title"
 import { WalletActionButton } from "@/components/wallet-action-button"
 import { PoweredBy } from "@/components/powered-by"
 import { Disclaimer } from "@/components/disclaimer"
-import { useMoonPay } from "@/lib/moonpay"
 import { MOONGATE_API_KEY } from "@/lib/constants"
 
 export default function Home() {
-  const { showMoonPay } = useMoonPay()
-
   return (
     <div className="min-h-screen bg-[#f5f5f5] flex flex-col">
       <Header />
@@ -21,7 +18,7 @@ export default function Home() {
         <PaymentTitle />
 
         <MoonGateProvider apiKey={MOONGATE_API_KEY}>
-          <WalletActionButton onBuyTroll={showMoonPay} />
+          <WalletActionButton />
         </MoonGateProvider>
 
         <PoweredBy />
