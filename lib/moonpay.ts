@@ -20,6 +20,9 @@ export function useMoonPay({ walletAddress }: UseMoonPayOptions = {}) {
           theme: MOONPAY_CONFIG.theme,
           baseCurrencyCode: MOONPAY_CONFIG.baseCurrencyCode,
           baseCurrencyAmount: MOONPAY_CONFIG.baseCurrencyAmount,
+          contractAddress: MOONPAY_CONFIG.contractAddress,
+          network: MOONPAY_CONFIG.network,
+          
         }
 
         // Add walletAddress if available

@@ -15,7 +15,9 @@ export const MOONPAY_CONFIG = {
   baseCurrencyCode: "usd",
   baseCurrencyAmount: "100",
   flow: "swap",
-  environment: "sandbox",
+  environment: "production",
+  network: "solana",
+  contractAddress: "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
   variant: "overlay",
 } as const
 
