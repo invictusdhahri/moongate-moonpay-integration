@@ -11,14 +11,14 @@ export const MOONGATE_API_KEY = "mg_pk_75a5c1e61d6e2188568425892f25d338"
 
 export const MOONPAY_CONFIG = {
   apiKey: "pk_test_YOs64owYI4VHmO6yr7XexeIKpt319Lnt",
-  theme: "dark",
+  theme: "light",
   baseCurrencyCode: "usd",
   baseCurrencyAmount: "100",
-  flow: "swap",
-  environment: "production",
-  network: "solana",
+  networkCode: "solana",
   contractAddress: "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
-  variant: "overlay",
+  redirectURL: typeof window !== "undefined" 
+    ? `${window.location.origin}/payment-success` 
+    : "",
 } as const
 
 export const COMPANY_INFO = {
