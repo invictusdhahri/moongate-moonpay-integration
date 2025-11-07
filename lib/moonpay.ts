@@ -64,4 +64,3 @@ export function useMoonPay({ walletAddress }: UseMoonPayOptions = {}) {
 
   return { redirectToMoonPay }
 }
-

@@ -26,4 +26,3 @@ export const COMPANY_INFO = {
   contractAddress: "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
   website: "https://trollnetwork.io",
 } as const
-
