@@ -7,10 +7,10 @@ export const PAYMENT_METHODS = [
   "Kidneys?",
 ]
 
-export const MOONGATE_API_KEY = "pk_live_N9gHTkUXEwD55pq7IpIF4WCsJUVnHI7"
+export const MOONGATE_API_KEY = "mg_pk_75a5c1e61d6e2188568425892f25d338"
 
 export const MOONPAY_CONFIG = {
-  apiKey: "pk_test_YOs64owYI4VHmO6yr7XexeIKpt319Lnt",
+  apiKey: "pk_live_N9gHTkUXEwD55pq7IpIF4WCsJUVnHI7",
   theme: "light",
   baseCurrencyCode: "usd",
   baseCurrencyAmount: "100",
