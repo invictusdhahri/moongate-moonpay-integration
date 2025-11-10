@@ -5,7 +5,7 @@ export function PoweredBy() {
       <img src="/moonpay-logo.png" alt="MoonPay" className="h-5" />
       <span>x</span>
       <img
-        src="/images/design-mode/Moongate_logo_-_full_black-removebg-preview.png"
+        src="/Moongate_logo_-_full_black-removebg-preview.png"
         alt="Moongate"
         className="h-4"
       />

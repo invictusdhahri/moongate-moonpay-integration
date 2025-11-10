@@ -147,3 +147,25 @@ main .moongate-wallet-sdk > button:focus-visible {
   outline-offset: 2px !important;
   ring: 2px !important;
 }
+
+/* Discord-style copy toast bounce animation */
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.8) translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05) translateY(2px);
+  }
+  70% {
+    transform: scale(0.98) translateY(-1px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.copy-toast-bounce {
+  animation: bounce-in 0.3s ease-out !important;
+}

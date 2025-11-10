@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Toaster } from "sonner"
 import "./globals.css"
 import '@moongate/sdk/styles.css';
 const _geist = Geist({ subsets: ["latin"] })
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   description: "Purchase $TROLL with Apple Pay, Paypal, Credit Card, Debit Card, Bank Transfer, Kidneys?",
   generator: "v0.app",
   icons: {
-    icon: "/images/design-mode/IMG_0174.png",
+    icon: "/IMG_0174.png",
   },
 }
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
+        <Toaster />
       </body>
     </html>
   )
