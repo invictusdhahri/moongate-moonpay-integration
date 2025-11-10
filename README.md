@@ -351,6 +351,11 @@ moongate-moonpay-integration/
 - **On-Ramp Guide**: [https://dev.moonpay.com/docs/on-ramp-overview](https://dev.moonpay.com/docs/on-ramp-overview)
 - **Support**: [support@moonpay.com](mailto:support@moonpay.com)
 
+### Direct Support
+- Email: [amen@moongate.one](mailto:amen@moongate.one)
+- Telegram: [@asta1000](https://t.me/asta1000)
+- Twitter: [@dev_amendh](https://twitter.com/dev_amendh)
+
 ## License
 
 This project is private and proprietary.
