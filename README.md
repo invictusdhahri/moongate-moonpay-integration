@@ -122,10 +122,7 @@ After obtaining your API key, configure your adapter settings in the Moongate Pa
    - Configure redirect URLs after wallet connection
    - Set up webhook endpoints for connection events
 
-**Moongate Adapter Configuration Links:**
-- [Adapter Settings](https://partner.moongate.one/projects/[your-project]/settings/adapter) - Configure adapter appearance
-- [Theme Customization](https://partner.moongate.one/projects/[your-project]/settings/theme) - Customize colors and styles
-- [Wallet Configuration](https://partner.moongate.one/projects/[your-project]/settings/wallets) - Manage supported wallets
+
 
 **Example Websites Using Moongate:**
 - [troll.fund](https://troll.fund) - Example integration with custom branding
